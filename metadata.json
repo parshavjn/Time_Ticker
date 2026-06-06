@@ -1,0 +1,6 @@
+{
+  "name": "Time Tracker",
+  "description": "A high-performance, lightweight time tracker featuring an elegant dashboard, instant session logging, and PIN-secured local database storage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
