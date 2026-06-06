@@ -476,7 +476,7 @@ export default function Dashboard({ sessions, categories, onDeleteSession, onUpd
                     : 0;
 
                   return (
-                    <div key={idx} className="flex-1 flex flex-col items-center group relative cursor-pointer font-sans">
+                    <div key={idx} className="flex-1 h-full flex flex-col items-center group relative cursor-pointer font-sans">
                       {/* Tooltip widget */}
                       <div className="absolute bottom-full mb-1.5 hidden group-hover:block bg-slate-950 text-white text-[10px] py-1.5 px-2 rounded-md shadow-lg z-20 whitespace-nowrap text-center">
                         <p className="font-bold">{day.hours} Hrs</p>
@@ -484,7 +484,7 @@ export default function Dashboard({ sessions, categories, onDeleteSession, onUpd
                       </div>
 
                       {/* Bar Fill Track */}
-                      <div className="w-full bg-slate-50 rounded-md h-full flex flex-col justify-end border border-slate-100 relative overflow-hidden">
+                      <div className="w-full bg-slate-50 rounded-md flex-1 flex flex-col justify-end border border-slate-100 relative overflow-hidden">
                         <motion.div 
                           initial={{ height: 0 }}
                           animate={{ height: `${Math.max(barHeightPercent, day.hours > 0 ? 5 : 0)}%` }}
